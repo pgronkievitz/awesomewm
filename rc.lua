@@ -25,6 +25,7 @@ local cpu_widget = require("awesome-wm-widgets.cpu-widget.cpu-widget")
 local brightness_widget = require("awesome-wm-widgets.brightness-widget.brightness")
 local ram_widget = require("awesome-wm-widgets.ram-widget.ram-widget")
 local volume_widget = require('awesome-wm-widgets.volume-widget.volume')
+local docker_widget = require("awesome-wm-widgets.docker-widget.docker")
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -220,6 +221,7 @@ awful.screen.connect_for_each_screen(function(s)
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
             wibox.widget.systray(),
+            docker_widget(),
             batteryarc_widget({
                     font = beautiful.font,
                     bg_color = beautiful.bg_color,
