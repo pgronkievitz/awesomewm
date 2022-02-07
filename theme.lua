@@ -33,10 +33,10 @@ t.border_focus  = "#00bfff"
 t.border_marked = "#ffd700"
 
 -- taglist
-t.taglist_bg_focus = "#87cefa"
-t.taglist_bg_urgent = "#ff6347"
-t.taglist_bg_occupied = "#000080"
-t.taglist_bg_empty = "#708090"
+t.taglist_bg_focus = t.bg_focus
+t.taglist_bg_urgent = t.bg_urgent
+t.taglist_bg_occupied = "#335EA8"
+t.taglist_bg_empty = t.bg_normal
 t.taglist_bg_volatile = "#dcdcdc"
 
 t.taglist_fg_focus = t.font_color
