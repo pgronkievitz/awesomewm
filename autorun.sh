@@ -7,4 +7,5 @@ run() {
   fi
 }
 
+run autorandr -c
 run megasync
