@@ -350,7 +350,28 @@ globalkeys = gears.table.join(
               {description = "lua execute prompt", group = "awesome"}),
     -- Menubar
     awful.key({ modkey }, "space", function() menubar.show() end,
-              {description = "show the menubar", group = "launcher"})
+              {description = "show the menubar", group = "launcher"}),
+
+    -- System management
+    ---- music
+    awful.key({                   }, "XF86AudioPlay", function () awful.spawn("playerctl play-pause") end,
+              {description = "play/pause", group = "Music"}),
+    awful.key({ modkey            }, "XF86AudioLowerVolume", function () awful.spawn("playerctl previous") end,
+              {description = "previous song", group = "Music"}),
+    awful.key({ modkey            }, "XF86AudioRaiseVolume", function () awful.spawn("playerctl next") end,
+              {description = "next song", group = "Music"}),
+    ---- volume
+    awful.key({                   }, "XF86AudioMute", function () awful.spawn("pamixer mute") end,
+              {description = "toggle audio", group = "Audio"}),
+    awful.key({                   }, "XF86AudioLowerVolume", function () awful.spawn("pamixer -d 5") end,
+              {description = "lower volume", group = "Audio"}),
+    awful.key({                   }, "XF86AudioRaiseVolume", function () awful.spawn("pamixer -i 5") end,
+              {description = "increase volume", group = "Audio"}),
+    ---- brightness
+    awful.key({                   }, "XF86MonBrightnessDown", function () brightness_widget:dec() end,
+              {description = "lower brightness", group = "Monitor"}),
+    awful.key({                   }, "XF86MonBrightnessUp", function () brightness_widget:inc() end,
+              {description = "raise brightness", group = "Monitor"})
 )
 
 clientkeys = gears.table.join(
