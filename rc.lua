@@ -167,6 +167,11 @@ local function set_wallpaper(s)
     end
 end
 
+
+my_systray = wibox.widget.systray()
+my_systray:set_base_size(24)
+beautiful.systray_icon_spacing = 2
+
 -- Re-set wallpaper when a screen's geometry changes (e.g. different resolution)
 screen.connect_signal("property::geometry", set_wallpaper)
 
