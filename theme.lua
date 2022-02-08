@@ -13,7 +13,7 @@ local t = {}
 
 t.gap_single_client  = false
 
-t.font          = "FantasqueSansMono Nerd Font 12"
+t.font          = "VictorMono Nerd Font 12"
 t.font_color_light = "#ffffff"
 t.font_color = "#000000"
 
