@@ -236,6 +236,8 @@ awful.screen.connect_for_each_screen(function(s)
                     bg_color = beautiful.bg_color,
                     low_level_color = beautiful.bg_urgent,
                     medium_level_color = "#ffd700",
+                    show_notification_mode = "on_click",
+                    warning_msg_position = "top_right",
             }),
             brightness_widget({
                     font = beautiful.font,
