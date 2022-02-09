@@ -370,7 +370,7 @@ globalkeys = gears.table.join(
     awful.key({ modkey            }, "XF86AudioRaiseVolume", function () awful.spawn("playerctl next") end,
               {description = "next song", group = "Music"}),
     ---- volume
-    awful.key({                   }, "XF86AudioMute", function () awful.spawn("pamixer mute") end,
+    awful.key({                   }, "XF86AudioMute", function () awful.spawn("pamixer -t") end,
               {description = "toggle audio", group = "Audio"}),
     awful.key({                   }, "XF86AudioLowerVolume", function () awful.spawn("pamixer -d 5") end,
               {description = "lower volume", group = "Audio"}),
