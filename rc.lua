@@ -380,7 +380,9 @@ globalkeys = gears.table.join(
     awful.key({                   }, "XF86MonBrightnessDown", function () brightness_widget:dec() end,
               {description = "lower brightness", group = "Monitor"}),
     awful.key({                   }, "XF86MonBrightnessUp", function () brightness_widget:inc() end,
-              {description = "raise brightness", group = "Monitor"})
+              {description = "raise brightness", group = "Monitor"}),
+    awful.key({                   }, "XF86Calculator", awful.spawn(editor .. "-e (calc-keypad)"),
+              {description = "Run calculator", group = "launcher"})
 )
 
 clientkeys = gears.table.join(
