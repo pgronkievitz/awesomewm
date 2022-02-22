@@ -13,35 +13,35 @@ local t = {}
 
 t.gap_single_client  = false
 
-t.font          = "VictorMono Nerd Font 12"
-t.font_color_light = "#ffffff"
-t.font_color = "#000000"
+t.font          = "VictorMono Nerd Font 10"
+t.font_color_light = "#cbccc6"
+t.font_color = "#575f66"
 
 t.bg_normal     = "#f5f5f5"
-t.bg_focus      = "#a4d3ee"
-t.bg_urgent     = "#cd6889"
-t.bg_minimize   = "#00fa9a"
+t.bg_focus      = "#fa8d3e"
+t.bg_urgent     = "#f07171"
+t.bg_minimize   = "#4490a9"
 t.bg_systray    = t.bg_normal
 
 t.fg_normal     = t.font_color
-t.fg_focus      = t.font_color
+t.fg_focus      = t.font_color_light
 t.fg_urgent     = t.font_color
 t.fg_minimize   = t.font_color
 
-t.useless_gap   = dpi(3)
-t.border_width  = dpi(1)
-t.border_normal = "#eed5d2"
-t.border_focus  = "#00bfff"
-t.border_marked = "#ffd700"
+t.useless_gap   = dpi(4)
+t.border_width  = dpi(2)
+t.border_normal = "#ba9199"
+t.border_focus  = t.bg_focus
+t.border_marked = "#4cbf99"
 
 -- taglist
 t.taglist_bg_focus = t.bg_focus
 t.taglist_bg_urgent = t.bg_urgent
-t.taglist_bg_occupied = "#335EA8"
+t.taglist_bg_occupied = "#55b4d4"
 t.taglist_bg_empty = t.bg_normal
-t.taglist_bg_volatile = "#dcdcdc"
+t.taglist_bg_volatile = "#b549d6"
 
-t.taglist_fg_focus = t.font_color
+t.taglist_fg_focus = t.font_color_light
 t.taglist_fg_urgent = t.font_color
 t.taglist_fg_occupied = t.font_color_light
 t.taglist_fg_empty = t.font_color
