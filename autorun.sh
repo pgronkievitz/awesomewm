@@ -9,3 +9,4 @@ run() {
 
 run autorandr -c
 run megasync
+[ $(hostname) = 'themis' ] && echo run keepassxc
