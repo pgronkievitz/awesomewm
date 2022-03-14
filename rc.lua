@@ -58,7 +58,7 @@ beautiful.init("/home/pg/.config/awesome/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"
-editor = os.getenv("EDITOR") or "emacs"
+editor = os.getenv("EDITOR") or "emacsclient -c"
 editor_cmd = editor
 
 -- Default modkey.
@@ -230,7 +230,9 @@ awful.screen.connect_for_each_screen(function(s)
                 layout = wibox.container.margin,
                 margins = 4,
             },
-            docker_widget(),
+            docker_widget{
+                number_of_containers = 5,
+            },
             batteryarc_widget({
                     font = beautiful.font,
                     bg_color = beautiful.bg_color,
