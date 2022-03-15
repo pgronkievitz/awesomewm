@@ -11,17 +11,35 @@ local themes_path = gfs.get_themes_dir()
 
 local t = {}
 
+local colors = {}
+colors.base00 = "#2e3440"
+colors.base01 = "#3b4252"
+colors.base02 = "#434c5e"
+colors.base03 = "#4c566a"
+colors.base04 = "#d8dee9"
+colors.base05 = "#e5e9f0"
+colors.base06 = "#eceff4"
+colors.base07 = "#8fbcbb"
+colors.base08 = "#88c0d0"
+colors.base09 = "#81a1c1"
+colors.base10 = "#5e81ac"
+colors.base11 = "#bf616a"
+colors.base12 = "#d08770"
+colors.base13 = "#ebcb8b"
+colors.base14 = "#a3be8c"
+colors.base15 = "#b48ead"
+
 t.gap_single_client  = false
 
 t.font          = "VictorMono Nerd Font 10"
-t.font_color_light = "#cbccc6"
-t.font_color = "#575f66"
+t.font_color_light = colors.base05
+t.font_color = colors.base00
 
-t.bg_normal     = "#f5f5f5"
-t.bg_focus      = "#fa8d3e"
-t.bg_urgent     = "#f07171"
-t.bg_minimize   = "#4490a9"
-t.bg_systray    = t.bg_normal
+t.bg_normal     = colors.base05
+t.bg_focus      = colors.base08
+t.bg_urgent     = colors.base11
+t.bg_minimize   = colors.base10
+t.bg_systray    = colors.base05
 
 t.fg_normal     = t.font_color
 t.fg_focus      = t.font_color_light
@@ -30,16 +48,16 @@ t.fg_minimize   = t.font_color
 
 t.useless_gap   = dpi(4)
 t.border_width  = dpi(2)
-t.border_normal = "#ba9199"
+t.border_normal = colors.base10
 t.border_focus  = t.bg_focus
-t.border_marked = "#4cbf99"
+t.border_marked = colors.base13
 
 -- taglist
 t.taglist_bg_focus = t.bg_focus
 t.taglist_bg_urgent = t.bg_urgent
-t.taglist_bg_occupied = "#55b4d4"
+t.taglist_bg_occupied = colors.base09
 t.taglist_bg_empty = t.bg_normal
-t.taglist_bg_volatile = "#b549d6"
+t.taglist_bg_volatile = colors.base15
 
 t.taglist_fg_focus = t.font_color_light
 t.taglist_fg_urgent = t.font_color
@@ -81,7 +99,7 @@ t.tooltip_border_color = t.border_focus
 -- prompt
 t.prompt_bg = t.bg_normal
 t.prompt_fg = t.fg_normal
-t.prompt_bg_cursor = "#00bfff"
+t.prompt_bg_cursor = colors.base07
 t.prompt_fg_cursor = t.bg_normal
 t.prompt_font = t.font
 
