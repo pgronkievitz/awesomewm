@@ -5,6 +5,7 @@
 local theme_assets = require("beautiful.theme_assets")
 local xresources = require("beautiful.xresources")
 local dpi = xresources.apply_dpi
+local colors = require("colors")
 
 local gfs = require("gears.filesystem")
 local themes_path = gfs.get_themes_dir()
@@ -12,22 +13,22 @@ local themes_path = gfs.get_themes_dir()
 local t = {}
 
 local colors = {}
-colors.base00 = "#2e3440"
-colors.base01 = "#3b4252"
-colors.base02 = "#434c5e"
-colors.base03 = "#4c566a"
-colors.base04 = "#d8dee9"
-colors.base05 = "#e5e9f0"
-colors.base06 = "#eceff4"
+colors.base00 = "#000000"
+colors.base01 = "#999999"
+colors.base02 = "#a6a6a6"
+colors.base03 = "#b3b3b3"
+colors.base04 = "#bfbfbf"
+colors.base05 = "#d9d9d9"
+colors.base06 = "#ffffff"
 colors.base07 = "#8fbcbb"
-colors.base08 = "#88c0d0"
-colors.base09 = "#81a1c1"
-colors.base10 = "#5e81ac"
-colors.base11 = "#bf616a"
-colors.base12 = "#d08770"
-colors.base13 = "#ebcb8b"
-colors.base14 = "#a3be8c"
-colors.base15 = "#b48ead"
+colors.base08 = "#00868b"
+colors.base09 = "#87ceeb"
+colors.base10 = "#00c5cd"
+colors.base11 = "#8b0000"
+colors.base12 = "#ff7f50"
+colors.base13 = "#eecfa1"
+colors.base14 = "#006400"
+colors.base15 = "#da70d6"
 
 t.gap_single_client  = false
 
@@ -61,7 +62,7 @@ t.taglist_bg_volatile = colors.base15
 
 t.taglist_fg_focus = t.font_color_light
 t.taglist_fg_urgent = t.font_color
-t.taglist_fg_occupied = t.font_color_light
+t.taglist_fg_occupied = t.font_color
 t.taglist_fg_empty = t.font_color
 t.taglist_fg_volatile = t.font_color
 
@@ -184,7 +185,7 @@ t.titlebar_maximized_button_focus_inactive  = themes_path.."default/titlebar/max
 t.titlebar_maximized_button_normal_active = themes_path.."default/titlebar/maximized_normal_active.png"
 t.titlebar_maximized_button_focus_active  = themes_path.."default/titlebar/maximized_focus_active.png"
 
-t.wallpaper = "/home/pg/Pictures/Wallpapers/tux.png"
+t.wallpaper = "/home/pg/Pictures/Wallpapers/architecture_frankfurt.jpg"
 
 -- You can use your own layout icons like this:
 t.layout_fairh = "/home/pg/.config/awesome/icons/fairhw.png"
