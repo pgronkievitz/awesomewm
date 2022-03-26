@@ -8,5 +8,10 @@ run() {
 }
 
 run autorandr -c
-run megasync
-[ $(hostname) = 'themis' ] && echo run keepassxc
+run teams
+run spotify
+[ $(hostname) = 'artemis' ] && run megasync
+[ $(hostname) = 'artemis' ] && run telegram-desktop
+[ $(hostname) = 'artemis' ] && run discord
+[ $(hostname) = 'themis' ] && run keepassxc
+[ $(hostname) = 'themis' ] && run slack
