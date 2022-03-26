@@ -383,7 +383,17 @@ globalkeys = gears.table.join(
               {description = "lower brightness", group = "Monitor"}),
     awful.key({                   }, "XF86MonBrightnessUp", function () brightness_widget:inc() end,
               {description = "raise brightness", group = "Monitor"}),
-    awful.key({                   }, "XF86Calculator", awful.spawn(editor .. "-e (calc-keypad)"),
+    awful.key({                   }, "XF86KbdBrightnessDown", function () awful.spawn("asusctl -p") end,
+              {description = "lower brightness", group = "Keyboard"}),
+    awful.key({                   }, "XF86KbdBrightnessUp", function () awful.spawn("asusctl -n") end,
+              {description = "raise brightness", group = "Keyboard"}),
+    awful.key({                   }, "XF86Launch3", function () awful.spawn("asusctl led-mode -n") end,
+              {description = "raise brightness", group = "Keyboard"}),
+    awful.key({                   }, "XF86Launch4", function () awful.spawn("asusctl profile -n") end,
+              {description = "next mode", group = "System"}),
+    awful.key({                   }, "XF86Launch1", function () awful.spawn("emacs") end,
+              {description = "emacs", group = "Launcher"}),
+    awful.key({                   }, "XF86Calculator", function () awful.spawn(editor .. "-e (calc-keypad)") end,
               {description = "Run calculator", group = "launcher"})
 )
 
