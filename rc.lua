@@ -292,8 +292,8 @@ globalkeys = gears.table.join(
               {description = "open a terminal", group = "launcher"}),
     awful.key({ modkey,           }, "e", function () awful.spawn(editor) end,
               {description = "open emacs", group = "launcher"}),
-    awful.key({ modkey,           }, "w", function () awful.spawn("firefox") end,
-              {description = "open firefox", group = "launcher"}),
+    awful.key({ modkey,           }, "w", function () awful.spawn("librewolf") end,
+              {description = "open librewolf", group = "launcher"}),
     awful.key({ modkey,           }, "Escape", function () awful.spawn("betterlockscreen -l") end,
               {description = "lock screen", group = "launcher"}),
     awful.key({                   }, "Print", function () awful.spawn("flameshot gui") end,
@@ -515,7 +515,7 @@ awful.rules.rules = {
     -- Floating clients.
     { rule_any = {
         instance = {
-          "DTA",  -- Firefox addon DownThemAll.
+          "DTA",  -- Librewolf addon DownThemAll.
           "copyq",  -- Includes session name in class.
           "pinentry",
         },
@@ -553,14 +553,14 @@ awful.rules.rules = {
       }, properties = { titlebars_enabled = false }
     },
 
-    -- Set Firefox to always map on the tag named "2" on screen 1.
+    -- Set Librewolf to always map on the tag named "2" on screen 1.
     { rule_any = {
           class = {
                    "telegram-desktop",
                    "Tunderbird",
     },
     properties = { screen = 1, tag = "COM" }} },
-    { rule_any = { class = { "Firefox" },
+    { rule_any = { class = { "Librewolf" },
     properties = { screen = 2, tag = "WEB" }} },
     { rule_any = { class = { "Emacs" },
     properties = { screen = 2, tag = "EDT" }} },
