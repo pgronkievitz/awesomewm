@@ -19,13 +19,8 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 require("awful.hotkeys_popup.keys")
 
 local batteryarc_widget = require("awesome-wm-widgets.batteryarc-widget.batteryarc")
-local net_speed_widget = require("awesome-wm-widgets.net-speed-widget.net-speed")
--- local logout_popup = require("awesome-wm-widgets.logout-popup-widget.logout-popup")
-local cpu_widget = require("awesome-wm-widgets.cpu-widget.cpu-widget")
 local brightness_widget = require("awesome-wm-widgets.brightness-widget.brightness")
-local ram_widget = require("awesome-wm-widgets.ram-widget.ram-widget")
 local volume_widget = require('awesome-wm-widgets.volume-widget.volume')
-local docker_widget = require("awesome-wm-widgets.docker-widget.docker")
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -230,9 +225,6 @@ awful.screen.connect_for_each_screen(function(s)
                 layout = wibox.container.margin,
                 margins = 4,
             },
-            docker_widget{
-                number_of_containers = 5,
-            },
             batteryarc_widget({
                     font = beautiful.font,
                     bg_color = beautiful.bg_color,
@@ -249,11 +241,6 @@ awful.screen.connect_for_each_screen(function(s)
                     widget_type = "arc",
                     device = "default",
             }),
-            net_speed_widget(),
-            cpu_widget({
-                    process_info_max_length = 30,
-            }),
-            ram_widget(),
             mytextclock,
         },
     }
