@@ -378,7 +378,7 @@ globalkeys = gears.table.join(
               {description = "raise brightness", group = "Keyboard"}),
     awful.key({                   }, "XF86Launch4", function () awful.spawn("asusctl profile -n") end,
               {description = "next mode", group = "System"}),
-    awful.key({                   }, "XF86Launch1", function () awful.spawn("emacs") end,
+    awful.key({                   }, "XF86Launch1", function () awful.spawn(editor) end,
               {description = "emacs", group = "Launcher"}),
     awful.key({                   }, "XF86Calculator", function () awful.spawn(editor .. "-e (calc-keypad)") end,
               {description = "Run calculator", group = "launcher"})
