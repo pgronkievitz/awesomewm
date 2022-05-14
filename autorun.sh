@@ -10,7 +10,7 @@ run() {
 run autorandr -c
 run setxkbmap -option caps:escape
 [ $(hostname) = 'artemis' ] && run nm-applet
-[ $(hostname) = 'artemis' ] && run teams-insiders
+[ $(hostname) = 'artemis' ] && run ferdium
 [ $(hostname) = 'themis' ] && run teams
 run spotify
 [ $(hostname) = 'artemis' ] && run gammastep-indicator
@@ -20,6 +20,5 @@ run rsibreak
 [ $(hostname) = 'artemis' ] && run /opt/KopiaUI/kopia-ui
 [ $(hostname) = 'artemis' ] && run megasync
 [ $(hostname) = 'artemis' ] && run telegram-desktop
-[ $(hostname) = 'artemis' ] && run discord
 [ $(hostname) = 'themis' ] && run keepassxc
 [ $(hostname) = 'themis' ] && run slack
