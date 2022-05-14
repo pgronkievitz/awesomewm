@@ -294,7 +294,7 @@ globalkeys = gears.table.join(
               {description = "open emacs", group = "launcher"}),
     awful.key({ modkey,           }, "w", function () awful.spawn("librewolf") end,
               {description = "open librewolf", group = "launcher"}),
-    awful.key({ modkey,           }, "Escape", function () awful.spawn("betterlockscreen -l") end,
+    awful.key({ modkey,           }, "Escape", function () awful.spawn("dbus-launch betterlockscreen -l") end,
               {description = "lock screen", group = "launcher"}),
     awful.key({                   }, "Print", function () awful.spawn("flameshot gui") end,
               {description = "take a screenshot", group = "launcher"}),
