@@ -290,6 +290,8 @@ globalkeys = gears.table.join(
               {description = "open a terminal", group = "launcher"}),
     awful.key({ modkey,           }, "e", function () awful.spawn(editor) end,
               {description = "open emacs", group = "launcher"}),
+    awful.key({ modkey, "Shift"   }, "n", function () awful.spawn("emacsclient -e \"(call-interactively 'org-capture)\" -c") end,
+              {description = "open emacs", group = "launcher"}),
     awful.key({ modkey,           }, "w", function () awful.spawn("librewolf") end,
               {description = "open librewolf", group = "launcher"}),
     awful.key({ modkey,           }, "Escape", function () awful.spawn("dbus-launch betterlockscreen -l") end,
