@@ -11,6 +11,7 @@ run autorandr -c
 run setxkbmap -option caps:escape
 [ $(hostname) = 'artemis' ] && run nm-applet
 [ $(hostname) = 'artemis' ] && run ferdium
+[ $(hostname) = 'artemis' ] && run fusuma -c $HOME/.config/fusuma/config.yml -d
 [ $(hostname) = 'themis' ] && run teams
 run spotify
 [ $(hostname) = 'artemis' ] && run gammastep-indicator
