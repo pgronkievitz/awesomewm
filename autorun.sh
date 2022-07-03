@@ -12,6 +12,7 @@ run setxkbmap -option caps:escape
 [ $(hostname) = 'artemis' ] && run nm-applet
 [ $(hostname) = 'artemis' ] && run org.ferdium.Ferdium
 [ $(hostname) = 'artemis' ] && run kdeconnect-indicator
+[ $(hostname) = 'artemis' ] && run pcmanfm -d
 [ $(hostname) = 'themis' ] && run teams
 run spotify
 [ $(hostname) = 'artemis' ] && run gammastep-indicator
