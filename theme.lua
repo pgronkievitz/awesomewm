@@ -13,49 +13,49 @@ local t = {}
 
 local colors = {}
 colors.base00 = "#000000"
-colors.base01 = "#999999"
-colors.base02 = "#a6a6a6"
+colors.base01 = "#282828"
+colors.base02 = "#505050"
 colors.base03 = "#b3b3b3"
-colors.base04 = "#bfbfbf"
-colors.base05 = "#d9d9d9"
+colors.base04 = "#f0f0f0"
+colors.base05 = "#f8f8f8"
 colors.base06 = "#ffffff"
 colors.base07 = "#8fbcbb"
-colors.base08 = "#00868b"
+colors.base08 = "#c4ede0"
 colors.base09 = "#87ceeb"
 colors.base10 = "#00c5cd"
-colors.base11 = "#8b0000"
+colors.base11 = "#a60000"
 colors.base12 = "#ff7f50"
 colors.base13 = "#eecfa1"
 colors.base14 = "#006400"
 colors.base15 = "#da70d6"
 
-t.gap_single_client  = false
+t.gap_single_client = false
 
-t.font          = "BlexMono Nerd Font 10"
-t.font_color_light = colors.base05
+t.font = "BlexMono Nerd Font 10"
+t.font_color_light = colors.base01
 t.font_color = colors.base00
 
-t.bg_normal     = colors.base05
-t.bg_focus      = colors.base08
-t.bg_urgent     = colors.base11
-t.bg_minimize   = colors.base10
-t.bg_systray    = colors.base05
+t.bg_normal = colors.base06
+t.bg_focus = colors.base08
+t.bg_urgent = colors.base11
+t.bg_minimize = colors.base10
+t.bg_systray = colors.base05
 
-t.fg_normal     = t.font_color
-t.fg_focus      = t.font_color_light
-t.fg_urgent     = t.font_color
-t.fg_minimize   = t.font_color
+t.fg_normal = t.font_color
+t.fg_focus = t.font_color_light
+t.fg_urgent = t.font_color
+t.fg_minimize = t.font_color
 
-t.useless_gap   = dpi(4)
-t.border_width  = dpi(2)
+t.useless_gap = dpi(4)
+t.border_width = dpi(2)
 t.border_normal = colors.base10
-t.border_focus  = t.bg_focus
+t.border_focus = t.bg_focus
 t.border_marked = colors.base13
 
 -- taglist
 t.taglist_bg_focus = t.bg_focus
 t.taglist_bg_urgent = t.bg_urgent
-t.taglist_bg_occupied = colors.base09
+t.taglist_bg_occupied = "#d0d6ff"
 t.taglist_bg_empty = t.bg_normal
 t.taglist_bg_volatile = colors.base15
 
@@ -119,12 +119,8 @@ t.hotkeys_description_font = t.font
 
 -- Generate taglist squares:
 local taglist_square_size = dpi(4)
-t.taglist_squares_sel = theme_assets.taglist_squares_sel(
-    taglist_square_size, t.fg_normal
-)
-t.taglist_squares_unsel = theme_assets.taglist_squares_unsel(
-    taglist_square_size, t.fg_normal
-)
+t.taglist_squares_sel = theme_assets.taglist_squares_sel(taglist_square_size, t.fg_normal)
+t.taglist_squares_unsel = theme_assets.taglist_squares_unsel(taglist_square_size, t.fg_normal)
 
 -- Variables set for theming notifications:
 t.notification_font = t.font
@@ -148,9 +144,9 @@ t.menu_fg_focus = t.fg_focus
 t.menu_border_color = t.bg_systray
 t.menu_border_width = dpi(1)
 
-t.menu_submenu_icon = themes_path.."default/submenu.png"
+t.menu_submenu_icon = themes_path .. "default/submenu.png"
 t.menu_height = dpi(15)
-t.menu_width  = dpi(100)
+t.menu_width = dpi(100)
 
 -- You can add as many variables as
 -- you wish and access them by using
@@ -158,46 +154,46 @@ t.menu_width  = dpi(100)
 --t.bg_widget = "#cc0000"
 
 -- Define the image to load
-t.titlebar_close_button_normal = themes_path.."default/titlebar/close_normal.png"
-t.titlebar_close_button_focus  = themes_path.."default/titlebar/close_focus.png"
+t.titlebar_close_button_normal = themes_path .. "default/titlebar/close_normal.png"
+t.titlebar_close_button_focus = themes_path .. "default/titlebar/close_focus.png"
 
-t.titlebar_minimize_button_normal = themes_path.."default/titlebar/minimize_normal.png"
-t.titlebar_minimize_button_focus  = themes_path.."default/titlebar/minimize_focus.png"
+t.titlebar_minimize_button_normal = themes_path .. "default/titlebar/minimize_normal.png"
+t.titlebar_minimize_button_focus = themes_path .. "default/titlebar/minimize_focus.png"
 
-t.titlebar_ontop_button_normal_inactive = themes_path.."default/titlebar/ontop_normal_inactive.png"
-t.titlebar_ontop_button_focus_inactive  = themes_path.."default/titlebar/ontop_focus_inactive.png"
-t.titlebar_ontop_button_normal_active = themes_path.."default/titlebar/ontop_normal_active.png"
-t.titlebar_ontop_button_focus_active  = themes_path.."default/titlebar/ontop_focus_active.png"
+t.titlebar_ontop_button_normal_inactive = themes_path .. "default/titlebar/ontop_normal_inactive.png"
+t.titlebar_ontop_button_focus_inactive = themes_path .. "default/titlebar/ontop_focus_inactive.png"
+t.titlebar_ontop_button_normal_active = themes_path .. "default/titlebar/ontop_normal_active.png"
+t.titlebar_ontop_button_focus_active = themes_path .. "default/titlebar/ontop_focus_active.png"
 
-t.titlebar_sticky_button_normal_inactive = themes_path.."default/titlebar/sticky_normal_inactive.png"
-t.titlebar_sticky_button_focus_inactive  = themes_path.."default/titlebar/sticky_focus_inactive.png"
-t.titlebar_sticky_button_normal_active = themes_path.."default/titlebar/sticky_normal_active.png"
-t.titlebar_sticky_button_focus_active  = themes_path.."default/titlebar/sticky_focus_active.png"
+t.titlebar_sticky_button_normal_inactive = themes_path .. "default/titlebar/sticky_normal_inactive.png"
+t.titlebar_sticky_button_focus_inactive = themes_path .. "default/titlebar/sticky_focus_inactive.png"
+t.titlebar_sticky_button_normal_active = themes_path .. "default/titlebar/sticky_normal_active.png"
+t.titlebar_sticky_button_focus_active = themes_path .. "default/titlebar/sticky_focus_active.png"
 
-t.titlebar_floating_button_normal_inactive = themes_path.."default/titlebar/floating_normal_inactive.png"
-t.titlebar_floating_button_focus_inactive  = themes_path.."default/titlebar/floating_focus_inactive.png"
-t.titlebar_floating_button_normal_active = themes_path.."default/titlebar/floating_normal_active.png"
-t.titlebar_floating_button_focus_active  = themes_path.."default/titlebar/floating_focus_active.png"
+t.titlebar_floating_button_normal_inactive = themes_path .. "default/titlebar/floating_normal_inactive.png"
+t.titlebar_floating_button_focus_inactive = themes_path .. "default/titlebar/floating_focus_inactive.png"
+t.titlebar_floating_button_normal_active = themes_path .. "default/titlebar/floating_normal_active.png"
+t.titlebar_floating_button_focus_active = themes_path .. "default/titlebar/floating_focus_active.png"
 
-t.titlebar_maximized_button_normal_inactive = themes_path.."default/titlebar/maximized_normal_inactive.png"
-t.titlebar_maximized_button_focus_inactive  = themes_path.."default/titlebar/maximized_focus_inactive.png"
-t.titlebar_maximized_button_normal_active = themes_path.."default/titlebar/maximized_normal_active.png"
-t.titlebar_maximized_button_focus_active  = themes_path.."default/titlebar/maximized_focus_active.png"
+t.titlebar_maximized_button_normal_inactive = themes_path .. "default/titlebar/maximized_normal_inactive.png"
+t.titlebar_maximized_button_focus_inactive = themes_path .. "default/titlebar/maximized_focus_inactive.png"
+t.titlebar_maximized_button_normal_active = themes_path .. "default/titlebar/maximized_normal_active.png"
+t.titlebar_maximized_button_focus_active = themes_path .. "default/titlebar/maximized_focus_active.png"
 
 t.wallpaper = "/home/pg/Pictures/Wallpapers/loficoffee.jpg"
 
 -- You can use your own layout icons like this:
 t.layout_fairh = "/home/pg/.config/awesome/icons/fairhw.png"
 t.layout_fairv = "/home/pg/.config/awesome/icons/fairvw.png"
-t.layout_floating  = "/home/pg/.config/awesome/icons/floatingw.png"
+t.layout_floating = "/home/pg/.config/awesome/icons/floatingw.png"
 t.layout_magnifier = "/home/pg/.config/awesome/icons/magnifierw.png"
 t.layout_max = "/home/pg/.config/awesome/icons/maxw.png"
 t.layout_fullscreen = "/home/pg/.config/awesome/icons/fullscreenw.png"
 t.layout_tilebottom = "/home/pg/.config/awesome/icons/tilebottomw.png"
-t.layout_tileleft   = "/home/pg/.config/awesome/icons/tileleftw.png"
+t.layout_tileleft = "/home/pg/.config/awesome/icons/tileleftw.png"
 t.layout_tile = "/home/pg/.config/awesome/icons/tilew.png"
 t.layout_tiletop = "/home/pg/.config/awesome/icons/tiletopw.png"
-t.layout_spiral  = "/home/pg/.config/awesome/icons/spiralw.png"
+t.layout_spiral = "/home/pg/.config/awesome/icons/spiralw.png"
 t.layout_dwindle = "/home/pg/.config/awesome/icons/dwindlew.png"
 t.layout_cornernw = "/home/pg/.config/awesome/icons/cornernww.png"
 t.layout_cornerne = "/home/pg/.config/awesome/icons/cornernew.png"
@@ -205,9 +201,7 @@ t.layout_cornersw = "/home/pg/.config/awesome/icons/cornersww.png"
 t.layout_cornerse = "/home/pg/.config/awesome/icons/cornersew.png"
 
 -- Generate Awesome icon:
-t.awesome_icon = theme_assets.awesome_icon(
-    t.menu_height, t.bg_focus, t.fg_focus
-)
+t.awesome_icon = theme_assets.awesome_icon(t.menu_height, t.bg_focus, t.fg_focus)
 
 -- Define the icon theme for application icons. If not set then the icons
 -- from /usr/share/icons and /usr/share/icons/hicolor will be used.
