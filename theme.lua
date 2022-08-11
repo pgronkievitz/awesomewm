@@ -180,7 +180,7 @@ t.titlebar_maximized_button_focus_inactive = themes_path .. "default/titlebar/ma
 t.titlebar_maximized_button_normal_active = themes_path .. "default/titlebar/maximized_normal_active.png"
 t.titlebar_maximized_button_focus_active = themes_path .. "default/titlebar/maximized_focus_active.png"
 
-t.wallpaper = "/home/pg/Pictures/Wallpapers/loficoffee.jpg"
+t.wallpaper = "/home/pg/Pictures/Wallpapers/cliffs_4k.png"
 
 -- You can use your own layout icons like this:
 t.layout_fairh = "/home/pg/.config/awesome/icons/fairhw.png"
