@@ -31,7 +31,7 @@ colors.base15 = "#da70d6"
 
 t.gap_single_client = false
 
-t.font = "BlexMono Nerd Font 10"
+t.font = "DaddyTimeMono Nerd Font 10"
 t.font_color_light = colors.base01
 t.font_color = colors.base00
 
