@@ -798,6 +798,23 @@ clientkeys =
             c:raise()
         end,
         {description = "(un)maximize horizontally", group = "client"}
+    ),
+    -- IDASEN bindings
+    awful.key(
+        {modkey},
+        "Prior",
+        function()
+            awful.spawn("idasen stand")
+        end,
+        {description = "enable standing position", group = "desk"}
+    ),
+    awful.key(
+        {modkey},
+        "Next",
+        function()
+            awful.spawn("idasen sit")
+        end,
+        {description = "enable sitting position", group = "desk"}
     )
 )
 
