@@ -14,7 +14,7 @@ run setxkbmap -option caps:escape
 [ $(hostname) = 'artemis' ] && run kdeconnect-indicator
 [ $(hostname) = 'artemis' ] && run pcmanfm -d
 [ $(hostname) = 'themis' ] && run teams
-run spotify
+run deezer
 [ $(hostname) = 'artemis' ] && run gammastep-indicator
 [ $(hostname) = 'artemis' ] && run picom
 [ $(hostname) = 'artemis' ] && run flameshot
