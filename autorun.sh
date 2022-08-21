@@ -24,3 +24,5 @@ run rsibreak
 [ $(hostname) = 'artemis' ] && run telegram-desktop
 [ $(hostname) = 'themis' ] && run keepassxc
 [ $(hostname) = 'themis' ] && run slack
+
+xwallpaper --zoom "$HOME/.background-image"
