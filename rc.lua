@@ -514,6 +514,23 @@ awful.keyboard.append_global_keybindings(
                 awful.layout.inc(-1)
             end,
             {description = "select previous", group = "layout"}
+        ),
+        -- IDASEN bindings
+        awful.key(
+            {modkey},
+            "Prior",
+            function()
+                awful.spawn("idasen stand")
+            end,
+            {description = "enable standing position", group = "desk"}
+        ),
+        awful.key(
+            {modkey},
+            "Next",
+            function()
+                awful.spawn("idasen sit")
+            end,
+            {description = "enable sitting position", group = "desk"}
         )
     }
 )
