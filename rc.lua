@@ -24,7 +24,6 @@ require("awful.hotkeys_popup.keys")
 local batteryarc_widget = require("awesome-wm-widgets.batteryarc-widget.batteryarc")
 local brightness_widget = require("awesome-wm-widgets.brightness-widget.brightness")
 local volume_widget = require("awesome-wm-widgets.volume-widget.volume")
-local mpris_widget = require("awesome-wm-widgets.mpris-widget")
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
 -- another config (This code will only ever execute for the fallback config)
@@ -311,11 +310,6 @@ screen.connect_signal(
                 {
                     -- Right widgets
                     layout = wibox.layout.fixed.horizontal,
-                    -- mpris_widget(
-                    --     {
-                    --         font = beautiful.font
-                    --     }
-                    -- ),
                     {
                         my_systray,
                         layout = wibox.container.margin,
