@@ -9,6 +9,7 @@ run() {
 
 run autorandr -c
 run setxkbmap -option caps:escape
+run /usr/bin/lxpolkit
 [ $(hostname) = 'artemis' ] && run nm-applet
 [ $(hostname) = 'artemis' ] && run org.ferdium.Ferdium
 [ $(hostname) = 'artemis' ] && run kdeconnect-indicator
