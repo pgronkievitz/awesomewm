@@ -31,7 +31,7 @@ colors.base15 = "#da70d6"
 
 t.gap_single_client = false
 
-t.font = "Monofur Nerd Font 10"
+t.font = "Agave Nerd Font 10"
 t.font_color_light = colors.base01
 t.font_color = colors.base00
 
@@ -180,7 +180,7 @@ t.titlebar_maximized_button_focus_inactive = themes_path .. "default/titlebar/ma
 t.titlebar_maximized_button_normal_active = themes_path .. "default/titlebar/maximized_normal_active.png"
 t.titlebar_maximized_button_focus_active = themes_path .. "default/titlebar/maximized_focus_active.png"
 
-t.wallpaper = "/home/pg/Pictures/Wallpapers/cliffs_4k.png"
+t.wallpaper = "/home/pg/Pictures/Wallpapers/cyberpunkcity.jpg"
 
 -- You can use your own layout icons like this:
 t.layout_fairh = "/home/pg/.config/awesome/icons/fairhw.png"
