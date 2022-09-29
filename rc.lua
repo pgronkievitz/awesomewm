@@ -24,6 +24,7 @@ require("awful.hotkeys_popup.keys")
 local batteryarc_widget = require("awesome-wm-widgets.batteryarc-widget.batteryarc")
 local brightness_widget = require("awesome-wm-widgets.brightness-widget.brightness")
 local volume_widget = require("awesome-wm-widgets.volume-widget.volume")
+local calendar_widget = require("awesome-wm-widgets.calendar-widget.calendar")
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
 -- another config (This code will only ever execute for the fallback config)
@@ -152,6 +153,21 @@ screen.connect_signal( -- TODO: fix wallpaper
 
 -- Create a textclock widget
 mytextclock = wibox.widget.textclock("%Y-%m-%d (%a) %H:%M")
+local cw =
+    calendar_widget(
+    {
+        placement = "top_right",
+        start_sunday = false
+    }
+)
+mytextclock:connect_signal(
+    "button::press",
+    function(_, _, _, button)
+        if button == 1 then
+            cw.toggle()
+        end
+    end
+)
 
 my_systray = wibox.widget.systray()
 my_systray:set_base_size(24)
